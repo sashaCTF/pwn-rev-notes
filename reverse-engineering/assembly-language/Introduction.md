@@ -6,7 +6,9 @@ Assembly code and machine code are the two lowest programming languages, and are
 
 Because of this, more instructions are required to do the task compared to a higher level language.
 
-Here we see the same program written in 3 different programming languages, which is a classic "Hello World!" program, to demonstrate this point.
+Machine/assembly code is what programs are compiled into, for example when you do ``gcc file.c -o file``, gcc converts the c code into machine code, so that the computer can understand it, and be able to run it, so for reverse engineering it's important to know assembly code.
+
+Here we see the same program written in 3 different programming languages, which is a classic "Hello World!" program, to demonstrate the earlier point.
 
 Python (high)
 ```python
