@@ -57,3 +57,7 @@ The above is machine code represented in hex, except, machines don't interpret c
 ```
 
 As horrible as assembly code can be, we're gonna stick to it, because machine code is just horrible to read, unless you're a computer
+
+Don't worry if the above looks daunting, assembly code still isn't a very nice language to learn, and besides, you're here to learn it, and I'll try make it as clear as I can :)
+
+By the end of these, I'm not expecting you to be able to write fluently in assembly or machine code, that isn't quite what I'm trying to teach, however, the aim of this is so that you can **understand** it when decompiling programs
