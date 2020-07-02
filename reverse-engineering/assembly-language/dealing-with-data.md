@@ -4,7 +4,7 @@ In this we will go over how assembly handles data, through the use of the instru
 
 ## mov and lea
 
-`mov` and `lea` are both quite simliar, however it's important to know the differences
+`mov` and `lea` are both quite similiar, however it's important to know the differences
 
 ### mov
 `mov` is used to copy data to an address or register. The syntax is as follows:
