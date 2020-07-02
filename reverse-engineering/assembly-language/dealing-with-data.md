@@ -58,7 +58,7 @@ mov destination, source
  Instead of `eax` being `0x11111111`, it'll be `0x40000000`. This is because `lea` doesn't copy what's at the address over, rather it copies the address itself
  
  
- Summed up, `mov` copies *values*, while `lea` copies *addresses*
+ Summed up, `mov` copies the *value* at the address, while `lea` copies the *address* itself
  
  ## push and pop
  
