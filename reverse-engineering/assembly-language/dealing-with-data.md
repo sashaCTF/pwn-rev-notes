@@ -1,6 +1,6 @@
 # Dealing with data
 
-In this we will go over how assembly handles data, through the use of instructions such as `mov`, `lea`, `push`, `pop`, `xchg`
+In this we will go over how assembly handles data, through the use of the instructions: `mov`, `lea`, `push`, `pop`, `xchg`
 
 ## mov and lea
 
