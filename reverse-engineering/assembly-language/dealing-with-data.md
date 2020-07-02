@@ -84,7 +84,7 @@ mov destination, source
  
  If you're using `push` to write the value of a register to the top, it maintains the value in the register, as it is copying. Another important note, when a `push` is executed, it first *decrements* `esp` by 4/8 bytes (32bit/64bit), as the stack grows downwards, then the value is copied to the stack frame, where `esp` points to. 
  
- So, push basically acts as:
+ So, push basically acts as: (I am aware that this code is wrong, i just don't know how to fix it. maybe `mov dword esp, register`)
  ```asm
  add esp, 4/8
  mov esp, register
