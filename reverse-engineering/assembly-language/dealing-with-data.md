@@ -82,7 +82,15 @@ mov destination, source
  push eax
  ```
  
- If you're using `push` to write the value of a register to the top, it maintains the value in the register, as it is copying. Another important note, when a `push` is executed, it first *decrements* `esp` by 4/8 bytes (32bit/64bit), as the stack grows downwards, then the value is copied to the stack frame, where `esp` points to. For example, take our memory diagram below:
+ If you're using `push` to write the value of a register to the top, it maintains the value in the register, as it is copying. Another important note, when a `push` is executed, it first *decrements* `esp` by 4/8 bytes (32bit/64bit), as the stack grows downwards, then the value is copied to the stack frame, where `esp` points to. 
+ 
+ So, push basically acts as:
+ ```asm
+ add esp, 4/8
+ mov esp, register
+ ```
+ 
+ For example, take our memory diagram below:
  ```
  ...
  0xffff000c | 0x11111111
@@ -131,7 +139,16 @@ mov destination, source
  pop eax
  ```
  
- `pop` doesn't remove the values from the stack frame, however it does copy them. Another important note, similiar to push, is that when a `pop` instruction is executed, it will read the value that `esp` points to, then will increment `esp` by 4/8 (32bit/64bit). Take our memory diagram from earlier:
+ `pop` doesn't remove the values from the stack frame, however it does copy them. Another important note, similiar to push, is that when a `pop` instruction is executed, it will read the value that `esp` points to, then will increment `esp` by 4/8 (32bit/64bit). 
+
+So, `pop` basically acts as:
+
+```asm
+mov register, esp
+add esp, 4/8
+```
+
+ Take our memory diagram from earlier:
  
  ```
  ...
