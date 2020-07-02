@@ -1,9 +1,12 @@
 # Dealing with data
 
-In this we wil go over how assembly handles data, through the use of instructions such as `mov`, `push`, `pop`, `xchg`
+In this we wil go over how assembly handles data, through the use of instructions such as `mov`, `lea`, `push`, `pop`, `xchg`
 
-## mov
+## mov and lea
 
+`mov` and `lea` are both quite simliar, however it's important to know the differences
+
+### mov
 `mov` is used to copy data to an address or register. The syntax is as follows:
 
 ```asm
@@ -34,7 +37,7 @@ mov destination, source
  ```
  After the `mov`, our `eax` register would contain the value `0x11111111`
  
- ## lea
+ ### lea
  
  `lea` is similiar to `mov`, except it loads addresses. Syntax is as follows:
  ```asm
@@ -54,15 +57,22 @@ mov destination, source
  ```
  Instead of `eax` being `0x11111111`, it'll be `0x40000000`. This is because `lea` doesn't copy what's at the address over, rather it copies the address itself
  
- ## push
  
- `push` is used to write values to the top of the stack. Syntax is as follows:
+ Summed up, `mov` copies *values*, while `lea` copies *addresses*
+ 
+ ## push and pop
+ 
+ These two instructions are usually used together, but do very oppsoite jobs. 
+ (Note: It's important to remember here that `esp` points to the top of the stack frame)
+ 
+ ### push
+ `push` is used to copy values to the top of the stack frame. Syntax is as follows:
  
  ```asm
  push value
  ```
  
- For example, if you wanted to write 5 to the top of the stack:
+ For example, if you wanted to copy 5 to the top of the stack:
  ```asm
  push 5
  ```
@@ -72,18 +82,55 @@ mov destination, source
  push eax
  ```
  
- ## pop
+ If you're using `push` to write the value of a register to the top, it maintains the value in the register, as it copies. Another important note, when a `push` is executed, it first *decrements* `esp` by 4/8 bytes (32bit/64bit), as the stack grows downwards, then the value is copied to the stack frame, where `esp` points to. For example, take our memory diagram below:
+ ```
+ ...
+ 0xffff000c | 0x11111111
+ 0xffff0008 | 0x22222222    <=== esp points here
+ 0xffff0004 | 0x00000000
+ 0xffff0000 | 0x00000000
+ ...
+ ```
  
- `pop` is used to remove values from the top of the stack, and put them into a register. Syntax is as follows:
+ Then we execute:
+ ```asm
+ push 0x33333333
+ ```
+ Firstly, `esp` decrements by 4 bytes, so it points to the next available place (`0xffff0004`):
+ ```
+ ...
+ 0xffff000c | 0x11111111
+ 0xffff0008 | 0x22222222
+ 0xffff0004 | 0x00000000    <=== esp points here
+ 0xffff0000 | 0x00000000
+ ...
+ ```
+ 
+ Then we copy the value to where `esp` now points to:
+ ```
+ ...
+ 0xffff000c | 0x11111111
+ 0xffff0008 | 0x22222222
+ 0xffff0004 | 0x33333333    <=== esp points here
+ 0xffff0000 | 0x00000000
+ ...
+ ```
+ 
+ It's going down as that's the direction the stack grows
+ 
+ ### pop
+ 
+ `pop` is used to read values from the top of the stack frame, and put them into a register. Syntax is as follows:
  
  ```asm
  pop register
  ```
  
- For example, if you wanted to take the value at the top of the stack, and put it into the `eax` register:
+ For example, if you wanted to read the value at the top of the stack frame, and put it into the `eax` register:
  ```asm
  pop eax
  ```
+ 
  
  This is commonly used alongside push. For example, the following code would write 3 to the top of the stack, and then remove it and put it into the `eax` register:
  ```asm
@@ -91,7 +138,7 @@ mov destination, source
  pop eax
  ```
  
- This combo is used a lot in calling higher level c functions, with arguments. This is covered more in that article
+ This combo is used a lot in calling higher level c functions, with arguments. This is covered more in another article
  
  ## xchg
  
