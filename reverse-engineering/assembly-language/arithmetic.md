@@ -35,8 +35,17 @@ You can also add to memory addresses, for example:
 0x40000000 | 0x00000003
 ```
 ```asm
-add 0x40000000, 6
+add BYTE PTR 0x40000000, 6
 ```
+This uses a format specifier to point to the byte at memory address `0x40000000`. You cn read more about format specifiers here.
 ```
 0x40000000 | 0x00000009
+```
+
+## sub
+
+`sub` is the integer subtraction instruction. Syntax is as follows:
+
+```asm
+sub destination, source
 ```
