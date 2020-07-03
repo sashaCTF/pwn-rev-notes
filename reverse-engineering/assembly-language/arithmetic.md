@@ -37,7 +37,7 @@ You can also add to memory addresses, for example:
 ```asm
 add BYTE PTR 0x40000000, 6
 ```
-This uses a format specifier to point to the byte at memory address `0x40000000`. You cn read more about format specifiers here.
+This uses a format specifier to point to the byte at memory address `0x40000000`. You can read more about format specifiers here.
 ```
 0x40000000 | 0x00000009
 ```
@@ -49,3 +49,17 @@ This uses a format specifier to point to the byte at memory address `0x40000000`
 ```asm
 sub destination, source
 ```
+Here, source is subtracted from destination, and stored in destination. For example:
+```
+eax: 5
+```
+```asm
+sub eax, 3
+```
+```
+eax: 2
+```
+Same concept to `add`, except with subtraction.
+
+## mul
+
