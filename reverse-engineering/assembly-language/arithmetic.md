@@ -88,6 +88,26 @@ edx: 20
 
 ## div
 
+`div` is used to divide numbers. Similiar concept to `mul`, where the `eax` register is always divided by the provided operand. The quotient is then stored in the `eax` register, while the remainder is stored in the `edx` register.
+
+Syntax is as follows:
+```asm
+div divisor
+```
+
+For example:
+```
+eax: 10
+edx: 0
+```
+```asm
+div 3
+```
+```
+eax: 3    <== quotient
+edx: 1    <== remainder
+```
+
 ## inc and dec
 
 `inc` and `dec` are very simple, `inc` is `increment`, and `dec` is `decrement`, which will add 1 or subtract 1 from the supplied operand.
