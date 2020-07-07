@@ -4,7 +4,9 @@ In this we will go over arithmetic in assembly language, which will cover the in
 
 ## add
 
-`add` is the integer addition instruction. The syntax is as follows:
+`add` is the integer addition instruction.
+
+The syntax is as follows:
 
 ```asm
 add destination, source
@@ -44,7 +46,9 @@ This uses a format specifier to point to the byte at memory address `0x40000000`
 
 ## sub
 
-`sub` is the integer subtraction instruction. Syntax is as follows:
+`sub` is the integer subtraction instruction.
+
+Syntax is as follows:
 
 ```asm
 sub destination, source
@@ -67,7 +71,9 @@ Same concept to `add`, except with subtraction.
 
 ## inc and dec
 
-`inc` and `dec` are very simple, `inc` is `increment`, and `dec` is `decrement`, which will add 1 or subtract 1 from the supplied operand. Syntax is as follows:
+`inc` and `dec` are very simple, `inc` is `increment`, and `dec` is `decrement`, which will add 1 or subtract 1 from the supplied operand.
+
+Syntax is as follows:
 
 ```asm
 inc/dec register
