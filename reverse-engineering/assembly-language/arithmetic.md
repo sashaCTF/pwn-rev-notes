@@ -67,6 +67,25 @@ Same concept to `add`, except with subtraction.
 
 ## mul
 
+`mul` is used to multiply two numbers. The `eax` register is *always* multiplied against the supplied operand, and the result is stored in two registers, `eax` and `edx`, where the *most significant* bits are stored in `edx`, and *least significant* bits are stored in `eax`.
+
+Syntax is as follows:
+```asm
+mul multiplier
+```
+For example:
+```
+eax: 5
+edx: 0
+```
+```asm
+mul 4
+```
+```
+eax: 5
+edx: 20
+```
+
 ## div
 
 ## inc and dec
@@ -76,7 +95,7 @@ Same concept to `add`, except with subtraction.
 Syntax is as follows:
 
 ```asm
-inc/dec register
+inc/dec destination
 ```
 
 For example:
