@@ -4,8 +4,8 @@ Welcome to my notes on reverse engineering. This will contain my knowledge on re
 
 ### Contents
 
-* [What's reverse engineering?](https://github.com/sashaCTF/pwn-rev-notes/blob/master/reverse-engineering/What%20it%20is.md)
-* [Why is it good to learn reverse engineering?](https://github.com/sashaCTF/pwn-rev-notes/blob/master/reverse-engineering/Why%20learn%20it.md)
+* [What's reverse engineering?](https://github.com/sashaCTF/pwn-rev-notes/blob/master/reverse-engineering/what-is-it.md)
+* [Why is it good to learn reverse engineering?](https://github.com/sashaCTF/pwn-rev-notes/blob/master/reverse-engineering/why-learn-it.md)
 * Assembly Language
 * Tools
 * Tutorials + Examples
