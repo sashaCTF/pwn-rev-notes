@@ -12,7 +12,7 @@ Here we see the same program written in 3 different programming languages, which
 
 Python (high)
 ```python
-print("Hello World!")
+print("Hello, World!")
 ```
 
 C (medium)
