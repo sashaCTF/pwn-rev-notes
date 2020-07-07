@@ -63,3 +63,25 @@ Same concept to `add`, except with subtraction.
 
 ## mul
 
+## div
+
+## inc and dec
+
+`inc` and `dec` are very simple, `inc` is `increment`, and `dec` is `decrement`, which will add 1 or subtract 1 from the supplied operand. Syntax is as follows:
+
+```asm
+inc/dec register
+```
+
+For example:
+```
+eax: 2
+```
+```asm
+inc eax
+```
+```
+eax: 3
+```
+
+Same for `dec`
