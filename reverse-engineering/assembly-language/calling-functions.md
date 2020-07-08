@@ -59,6 +59,59 @@ call puts
 
 And we'd print `Hello World`
 
-But what about *multiple* arguments. 
+But what about *multiple* arguments?
+
+Well, we can call multiple `push` instructions before the `call`, however we have to do it in reverse order. So if we wanted to call a funcion, say `myFunc` for example, and wanted to pass the args `1 , 2 , 3`, in that order, instead of doing:
+```asm
+push 1
+push 2
+push 3
+call myFunc
+```
+
+We would do:
+```asm
+push 3
+push 2
+push 1
+call myFunc
+```
+
+This is because `push` decrements `esp`, aka the top of the stack frame, before it writes to the stack. So, if we did what we did in our first example, this is what would happen:
+
+Let's say our `esp` starts at `0xffff0020`. This is what our memory looks like right now:
+```
+0xffff0020 | 0xdeadbeef     <=== esp points here
+0xffff001c | 0x0
+0xffff0010 | 0x0
+0xffff000c | 0x0
+0xffff0000 | 0x0
+```
+When we call our first `push` (`push 1`), it would write to the next available space, which is 4 bytes below `esp`. So, when we call that, memory now looks like this:
+```
+0xffff0020 | 0xdeadbeef
+0xffff001c | 0x1            <=== esp points here
+0xffff0010 | 0x0
+0xffff000c | 0x0
+0xffff0000 | 0x0
+```
+And after executing the other two, it now looks like this:
+```
+0xffff0020 | 0xdeadbeef
+0xffff001c | 0x1
+0xffff0010 | 0x2
+0xffff000c | 0x3            <=== esp points here
+0xffff0000 | 0x0
+```
+Now, when the function executes, it will take the args going up in memory, so it would first take `0x3`, then `0x2`, then `0x1`. So, if we reverse the order, memory looks like this:
+```
+0xffff0020 | 0xdeadbeef
+0xffff001c | 0x3
+0xffff0010 | 0x2
+0xffff000c | 0x1            <=== esp points here
+0xffff0000 | 0x0
+```
+And would start at `0x1`, then `0x2`, then `0x3`
+
 
 
