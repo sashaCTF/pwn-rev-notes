@@ -22,6 +22,4 @@ Logic table is as shown:
 
 
 
-
-
 WIP
