@@ -86,7 +86,7 @@ mov destination, source
  
  So, push basically acts as:
  ```asm
- add esp, 4/8
+ sub esp, 4/8
  mov DWORD/QWORD PTR esp, register
  ```
  
@@ -200,4 +200,3 @@ add esp, 4/8
  eax: 5
  ebx: 3
  ```
- 
