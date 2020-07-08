@@ -117,5 +117,29 @@ Now, when the function executes, it will take the args going up in memory, so it
 ```
 And would start at `0x1`, then `0x2`, then `0x3`
 
+#### 64-bit
 
+In 64-bit, instead of reading arguments from the top of stack frame, it reads them from registers. The register used, in order, are:
+```
+rdi
+rsi
+rdx
+rcx
+r8
+r9
+```
+So for example, if you wanted to call our previous function with 1 arg, you would do:
+
+```asm
+mov rdi, 1
+call myFunc
+```
+Or if you wanted to call with 3:
+```asm
+mov rdi, 1
+mov rsi, 2
+mov rdx, 3
+call myFunc
+```
+However, if there are more than 6 arguments, the next ones are put onto the stack, and used in a similiar way to 32 bit, however you won't have to worry about this very often as it's usually rare to encounter functions that have 6 args
 
