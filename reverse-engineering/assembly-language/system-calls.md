@@ -52,7 +52,7 @@ These are the two you're likely to come across are `int 80` and `syscall`, and I
 
 #### int 80
 
-`int 80` tends to be used on **32-bit**, however it can be used on 64-bit (not recommended though). `sysenter` is also more advisable to use on 32-bit rather than `int 80`
+`int 80` tends to be used on **32-bit**, however it can be used on 64-bit (*not* recommended though). `sysenter` is also more advisable to use on 32-bit rather than `int 80`
 
 #### syscall
 
