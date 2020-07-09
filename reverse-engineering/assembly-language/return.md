@@ -10,9 +10,10 @@ We'll also cover the `leave` instruction
 
 It does this by changing the `eip` register, which contains the address of the current instruction. It will change it to what is at the top of the stack frame, aka what `esp` points to. A `ret` instrcution, is basically:
 ```asm
-pop epi
+pop eip
 ```
-As it takes what `esp` points to, sets `epi` to it, and increments `esp`
+As it takes what `esp` points to, sets `eip
+` to it, and increments `esp`
 
 Another note is that when a function is called, the `call` instruction writes the address of the next insruction to the top of the stack frame, so `ret` can use it to call back to where it was called from
 
