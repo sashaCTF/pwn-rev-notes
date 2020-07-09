@@ -23,6 +23,9 @@ edx
 esi
 edi
 ebp
+
+Return value:
+eax
 ```
 
 #### 64-bit
@@ -38,4 +41,7 @@ rcx
 r10
 r8
 r9
+
+Return value:
+rax
 ```
