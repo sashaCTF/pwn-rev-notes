@@ -67,3 +67,11 @@ rdi: [command to execute]
 rsi: 0
 rdx: 0
 ```
+
+You can also find tables online with this info, and I've linked some tables below:
+
+#### 32-bit table
+https://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html
+
+#### 64-bit table
+https://filippo.io/linux-syscall-table/
