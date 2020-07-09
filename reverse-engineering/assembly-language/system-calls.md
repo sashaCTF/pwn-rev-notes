@@ -57,3 +57,13 @@ These are the two you're likely to come across are `int 80` and `syscall`, and I
 #### syscall
 
 `syscall` is used on **64-bit**
+
+## system call numbers
+
+These are stored in `eax`/`rax` at the time of the system call. For example, if you wanted to make an `execve` system call on 64-bit, your registers would look like this:
+```
+rax: 59 (or 0x3b)
+rdi: [command to execute]
+rsi: 0
+rdx: 0
+```
