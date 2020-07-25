@@ -19,7 +19,7 @@ Another note is that when a function is called, the `call` instruction writes th
 
 ## What does `leave` do
 
-You may sometimes see a `leave` instruction called before a `ret` as well. What `leave` does, is copy `ebp` to `esp`, then pop a value from from `esp` to `ebp`. `leave` is basically:
+You may sometimes see a `leave` instruction called before a `ret` as well. What `leave` does, is copy `ebp` to `esp`, then pop a value from `esp` to `ebp`. `leave` is basically:
 ```asm
 mov esp, ebp
 pop ebp
