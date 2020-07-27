@@ -68,6 +68,6 @@ rsi: 0
 rdx: 0
 ```
 
-You can also find tables online with this info, and I've linked some tables below:
+You can also find tables online with this info, and I've linked a table below:
 
 https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md
