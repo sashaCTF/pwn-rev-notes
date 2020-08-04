@@ -63,3 +63,18 @@ For example:
 je  = jump equal
 jne = jump not equal
 ```
+I won't cover them all here, if you want to see more, [here](https://www.tutorialspoint.com/assembly_programming/assembly_conditions.htm) is a good site
+
+Using `jne`:
+```asm
+cmp eax, 10
+jne [somewhere else]
+```
+This will jump if `eax` isn't equal to `10`
+
+Here's also a common example for `test`:
+```asm
+test eax, eax
+je [somehwere else]
+```
+This essentially jumps if `eax` is equal to `0`
