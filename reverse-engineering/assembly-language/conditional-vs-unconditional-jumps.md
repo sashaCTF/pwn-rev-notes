@@ -1,6 +1,6 @@
 # conditional vs unconditional jumps
 
-This section covers the use of the `jmp` instruction, and it's variants
+This section covers the use of the `jmp` instruction, plus it's variants, and the `cmp` instruction
 
 ## unconditional jumps
 
@@ -26,3 +26,32 @@ They can also be used to make a `while true` loop:
 0x100000:   [code]
 ...
 0x200000:   jmp 0x100000
+```
+
+## conditional jumps
+
+Conditional jumps are essentially how assembly implements `if` statements. There are two parts that make up a conditional jump:
+```
+1: Some form of logic operation or comparison
+2: The jump
+```
+
+The first part is often filled out with a `cmp` instruction, however it can also be a [logic operation](logic.md)
+
+### cmp
+
+The `cmp` instruction essentially takes two operands, and subtracts one from the other, but *doesn't* change the values of them. Syntax is as follows:
+```asm
+cmp destination, source
+```
+
+For example, if we wanted to compare the value of `eax` to `10`, we would do:
+```asm
+cmp eax, 10
+```
+
+### jumps
+
+We'll come back to that in a moment, as we also need to discuss jumps to be able to use that `cmp`
+
+A conditional jump instruction has the basic 
