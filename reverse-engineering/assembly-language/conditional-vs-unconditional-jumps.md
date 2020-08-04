@@ -54,4 +54,12 @@ cmp eax, 10
 
 We'll come back to that in a moment, as we also need to discuss jumps to be able to use that `cmp`
 
-A conditional jump instruction has the basic 
+A conditional jump instruction has the basic structure of:
+```
+j[condition]
+```
+For example:
+```
+je = jump equal
+jne = jump not equal
+```
