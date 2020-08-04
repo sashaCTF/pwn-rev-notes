@@ -60,6 +60,6 @@ j[condition]
 ```
 For example:
 ```
-je = jump equal
+je  = jump equal
 jne = jump not equal
 ```
