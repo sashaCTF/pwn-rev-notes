@@ -2,7 +2,7 @@
 
 Registers are an area of memory that is quickly accessible by the processor compared to everyhwere else. They are often used to store small amounts of data for short periods of time, such as small numbers, addresses, or any other 4/8 byte value.
 
-## An overview
+## General Purpose Registers
 
 Listed below are the general puprose registers, which are used for most regular tasks:
 
@@ -32,7 +32,7 @@ Listed below are the general puprose registers, which are used for most regular 
 * esi
 * edi
 
-## Their purposes
+### Their purposes
 
 (note: i will refer to registers by their 64 bit counterpart, even though they're basically the same)
 
@@ -46,3 +46,23 @@ While these are general purpose registers, some usually have a purpose that they
 * `rdi`: argument register, holds argument #1
 * `r8-11`: scratch registers
 * `r12-r15`: preserved registers
+
+## Special Purpose Registers
+
+Special purpose registers are reserved registers that each perform an important and unqiue task. The 3 special purpose regsisters are as follows (64 bit):
+
+* rbp
+* rsp
+* rip
+
+### rbp
+
+`rbp` is the base pointer, which points to the *bottom* of the current stack frame. `rbp` is also where variables are calculated from
+
+### rsp
+
+`rsp` is the stack pointer, which points to the *top* of the current stack frame. This is where `ret` gets it's address to return to, and is an important register as it controls execution
+
+### rip
+
+`rip` is the program counter, and holds the address of the current instruction. This is often controlled to also change execution, such as with `jmp`, `ret` and `call` instructions
