@@ -75,4 +75,4 @@ Most of the registers are broken up into segments, such as the general purpose r
 
 This structure is also applied to other general purpose registers such as `rbx`, `rcx` and `rdx`:
 
-
+![registers](images/registers.png)
