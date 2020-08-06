@@ -71,4 +71,4 @@ Special purpose registers are reserved registers that each perform an important 
 
 Most of the registers are broken up into segments, such as the general purpose registers. For example, the `rax` register is the full, 64-bit version of that register, while `eax` is the 32-bit version. Then there's a 16-bit version `ax`, which is then broken up into two 8-bit registers `ah` and `al`. These 8-bit registers are labelled as such, because the `h` means `higher` and `l` means `lower`, basically saying that `al` is the lower of the two bytes in `ax`. This might sound confusing, so I'll give a diagram below:
 
-[images/rax.png](rax)
+![images/rax.png](rax)
