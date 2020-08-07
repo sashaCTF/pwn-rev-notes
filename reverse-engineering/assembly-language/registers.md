@@ -76,3 +76,7 @@ Most of the registers are broken up into segments, such as the general purpose r
 This structure is also applied to other general purpose registers such as `rbx`, `rcx` and `rdx`:
 
 ![registers](images/registers.png)
+
+Other registers can be segmented as well, but these are the main ones you'll see.
+
+Special purpose registers are *not* segmented in this manner either, the only segments you'll see are the 64-bit and 32-bit versions
