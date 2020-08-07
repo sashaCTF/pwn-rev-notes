@@ -39,7 +39,7 @@ You can also add to memory addresses, for example:
 ```asm
 add BYTE PTR 0x40000000, 6
 ```
-This uses a format specifier to point to the byte at memory address `0x40000000`. You can read more about format specifiers [here](https://github.com/sashaCTF/pwn-rev-notes/blob/master/reverse-engineering/assembly-language/format-specifiers.md).
+This uses a format specifier to point to the byte at memory address `0x40000000`. You can read more about format specifiers [here](format-specifiers.md).
 ```
 0x40000000 | 0x00000009
 ```
