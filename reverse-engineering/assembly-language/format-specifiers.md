@@ -48,7 +48,7 @@ DWORD PTR eax
 This value would be `0x22222222`, as the `PTR` means it takes the value at the address that `eax` stores
 
 
-Summed up, `DWORD` would take the literal value, while `DWORD PTR` takes the value at the address
+Summed up, `DWORD` would take the *value*, while `DWORD PTR` takes the value *at the address*
 
 
 
