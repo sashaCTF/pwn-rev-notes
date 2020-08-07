@@ -34,7 +34,7 @@ Calling functions with arguments is different in 32-bit and 64-bit, and I'll go 
 
 #### 32-bit
 
-In 32-bit, arguments for functions are taken from the top of the stack frame. Often what happens is that the agrumnets are pushed onto the stack with the `push` instrcution, right before calling (more info on `push` can be found [here](https://github.com/sashaCTF/pwn-rev-notes/blob/master/reverse-engineering/assembly-language/dealing-with-data.md#push))
+In 32-bit, arguments for functions are taken from the top of the stack frame. Often what happens is that the agrumnets are pushed onto the stack with the `push` instrcution, right before calling (more info on `push` can be found [here](dealing-with-data.md#push))
 
 For example, say that we wanted to print the string `Hello World` with the C function `puts`
 
