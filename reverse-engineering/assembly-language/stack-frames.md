@@ -23,5 +23,5 @@ push rbp
 The return pointer comes after the saved `rbp`, and dictates where the program should return back to once the called function has ended. This is saved to the stack frame by the `call` instruction. I mentioned this [here](calling-functions.md) as well, but I'll go over it again. When a function is called, it jumps to the code, but also pushes the address of the next instruction to the stack. However, to make sure it doesn't write this to the current stack frame, `rsp` will be altered before it happens. So, `call` is basically:
 ```asm
 jmp func
-push [rip + num]
+push [rip + 5]
 ```
