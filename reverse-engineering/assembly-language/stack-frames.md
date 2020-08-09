@@ -25,3 +25,4 @@ The return pointer comes after the saved `rbp`, and dictates where the program s
 jmp func
 push [rip + 5]
 ```
+(it's 5 because that's usually how many bytes a `call` instruction is)
