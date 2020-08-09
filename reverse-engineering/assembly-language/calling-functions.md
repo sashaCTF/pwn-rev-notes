@@ -20,7 +20,7 @@ And in assembly, we wanted to call this, we would do:
 call myFunc
 ```
 
-What this will do, is jump into `myFunc`, execute the machine code that makes up that function, then jump back to the `call` instruction with a `ret` instruction, and move to the next instruction. 
+What this will do, is jump into `myFunc`, execute the machine code that makes up that function, then jump back to the `call` instruction with a `ret` instruction, and move to the next instruction. Also, when it calls, it pushes the address of the next instruction onto the stack, so that it knows where to jump to
 
 In basic terms, `call` is essentially a `jmp` instruction
 
