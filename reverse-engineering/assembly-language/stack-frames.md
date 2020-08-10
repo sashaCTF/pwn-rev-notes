@@ -1,6 +1,12 @@
 # The Stack Frame
 
-The stack is an area of memory where data is typically stored (unless it's larger data, as that's usually stored in the heap). It is located near the top of the stack, just below the kernel, and grows downwards. The stack is made up of *stack frames*, which are areas of the stack that different fucntions use. When a function is called, it is assigned it's own stack frame, and the size of it depends on the size of what it stores. For example:
+The stack is an area of memory where data is typically stored (unless it's larger data, as that's usually stored in the heap). It is located near the top of the stack, just below the kernel, and grows downwards. The stack is made up of *stack frames*, which are areas of the stack that different functions use. A stack frame is basically dictated by what's between the `rsp` and the `rbp` (well not quite, but it's easier to think it is). Here's a diagram of stack frame:
+
+![stack-frame](images/stackframe.png)
+
+The `rbp` remains constant, holding the saved `rbp` that's right before the return pointer. It's constant as that's what the local variables are based on. You'll often see them represented by `rbp - [num]`, as variables are referenced by their address. Ifr the `rbp` changed, variables wouldn't be reference correctly. The `rsp` moves about quite a lot with `push`, `pop` and `leave` instructions, and doesn't need to be constant.
+
+When a function is called, it is assigned it's own stack frame, and the size of it depends on the size of what it stores. For example:
 
 ```c
 int func() {
