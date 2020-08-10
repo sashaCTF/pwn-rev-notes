@@ -1,6 +1,6 @@
 # The Stack Frame
 
-The stack is an area of memory where data is typically stored (unless it's larger data, as that's usually stored in the heap). It is located near the top of the stack, just below the kernel, and grows downwards. The stack is made up of *stack frames*, which are areas of the stack that different functions use. A stack frame is basically dictated by what's between the `rsp` and the `rbp` (well not quite, but it's easier to think it is). Here's a diagram of stack frame:
+The stack is an area of memory where data is typically stored (unless it's larger data, as that's usually stored in the heap). It is located near the top of the stack, just below the kernel, and grows downwards. The stack is made up of *stack frames*, which are areas of the stack that different functions use. Here's a diagram of stack frame:
 
 ![stack-frame](images/stackframe.png)
 
