@@ -3,7 +3,6 @@
 * [pwn-rev-notes](README.md)
 * [Reverse Engineering](reverse-engineering/README.md)
   * [What is assembly language?](reverse-engineering/assembly-language/README.md)
-    * [credits](reverse-engineering/assembly-language/credits.md)
     * [Dealing with data](reverse-engineering/assembly-language/dealing-with-data.md)
     * [The Stack Frame](reverse-engineering/assembly-language/stack-frames.md)
     * [Arithmetic](reverse-engineering/assembly-language/arithmetic.md)
