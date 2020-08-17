@@ -1,4 +1,4 @@
-# Format Specifiers
+# Format specifiers
 
 Format specifiers are used to specify how much data will be handled in assembly instructions, such as `mov` or `lea`. The specifiers are shown in the table below:
 
