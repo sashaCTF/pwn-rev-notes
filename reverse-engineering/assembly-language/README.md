@@ -67,3 +67,4 @@ Don't worry if the above looks daunting, assembly code still isn't a very nice l
 
 By the end of these, I'm not expecting you to be able to write fluently in assembly or machine code, that isn't quite what I'm trying to teach, however, the aim of this is so that you can **understand** it when decompiling and disassembling programs
 
+Also, another note, I will be covering *intel* assembly, not amd. This is because personally, amd's assembly is harder to read than intel's, and I will also be covering both 32-bit and 64-bit
