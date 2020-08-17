@@ -8,39 +8,49 @@ In this we will go over arithmetic in assembly language, which will cover the in
 
 The syntax is as follows:
 
-```asm
+```text
 add destination, source
 ```
 
 Here, source is added to destination, then is stored in destination. For example:
-```
+
+```text
 eax: 10
 ```
-```asm
+
+```text
 add eax, 5
 ```
-Then `eax` will be `15`
-This instruction can be used to add registers together, for example:
-```
+
+Then `eax` will be `15` This instruction can be used to add registers together, for example:
+
+```text
 eax: 5
 eax: 10
 ```
-```asm
+
+```text
 add ebx, eax
 ```
-```
+
+```text
 eax: 5
 ebx: 15
 ```
+
 You can also add to memory addresses, for example:
-```
+
+```text
 0x40000000 | 0x00000003
 ```
-```asm
+
+```text
 add BYTE PTR 0x40000000, 6
 ```
+
 This uses a format specifier to point to the byte at memory address `0x40000000`. You can read more about format specifiers [here](format-specifiers.md).
-```
+
+```text
 0x40000000 | 0x00000009
 ```
 
@@ -50,38 +60,48 @@ This uses a format specifier to point to the byte at memory address `0x40000000`
 
 Syntax is as follows:
 
-```asm
+```text
 sub destination, source
 ```
+
 Here, source is subtracted from destination, and stored in destination. For example:
-```
+
+```text
 eax: 5
 ```
-```asm
+
+```text
 sub eax, 3
 ```
-```
+
+```text
 eax: 2
 ```
+
 Same concept to `add`, except with subtraction.
 
 ## mul
 
-`mul` is used to multiply two numbers. The `eax` register is *always* multiplied against the supplied operand, and the result is stored in two registers, `eax` and `edx`, where the *most significant* bits are stored in `edx`, and *least significant* bits are stored in `eax`.
+`mul` is used to multiply two numbers. The `eax` register is _always_ multiplied against the supplied operand, and the result is stored in two registers, `eax` and `edx`, where the _most significant_ bits are stored in `edx`, and _least significant_ bits are stored in `eax`.
 
 Syntax is as follows:
-```asm
+
+```text
 mul multiplier
 ```
+
 For example:
-```
+
+```text
 eax: 5
 edx: 0
 ```
-```asm
+
+```text
 mul 4
 ```
-```
+
+```text
 eax: 5
 edx: 20
 ```
@@ -91,19 +111,23 @@ edx: 20
 `div` is used to divide numbers. Similiar concept to `mul`, where the `eax` register is always divided by the provided operand. The quotient is then stored in the `eax` register, while the remainder is stored in the `edx` register.
 
 Syntax is as follows:
-```asm
+
+```text
 div divisor
 ```
 
 For example:
-```
+
+```text
 eax: 10
 edx: 0
 ```
-```asm
+
+```text
 div 3
 ```
-```
+
+```text
 eax: 3    <== quotient
 edx: 1    <== remainder
 ```
@@ -114,19 +138,23 @@ edx: 1    <== remainder
 
 Syntax is as follows:
 
-```asm
+```text
 inc/dec destination
 ```
 
 For example:
-```
+
+```text
 eax: 2
 ```
-```asm
+
+```text
 inc eax
 ```
-```
+
+```text
 eax: 3
 ```
 
 Same for `dec`
+

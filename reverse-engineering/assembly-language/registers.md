@@ -34,7 +34,7 @@ Listed below are the general puprose registers, which are used for most regular 
 
 ### Their purposes
 
-(note: i will refer to registers by their 64 bit counterpart, even though they're basically the same)
+\(note: i will refer to registers by their 64 bit counterpart, even though they're basically the same\)
 
 While these are general purpose registers, some usually have a purpose that they're used for
 
@@ -42,14 +42,14 @@ While these are general purpose registers, some usually have a purpose that they
 * `rbx`: preserved register
 * `rcx`: scratch register, can be used as a counter sometimes
 * `rdx`: scratch register
-* `rsi`: argument register, holds argument #2
-* `rdi`: argument register, holds argument #1
+* `rsi`: argument register, holds argument \#2
+* `rdi`: argument register, holds argument \#1
 * `r8-11`: scratch registers
 * `r12-r15`: preserved registers
 
 ## Special Purpose Registers
 
-Special purpose registers are reserved registers that each perform an important and unqiue task. The 3 special purpose regsisters are as follows (64 bit):
+Special purpose registers are reserved registers that each perform an important and unqiue task. The 3 special purpose regsisters are as follows \(64 bit\):
 
 * rbp
 * rsp
@@ -57,11 +57,11 @@ Special purpose registers are reserved registers that each perform an important 
 
 ### rbp
 
-`rbp` is the base pointer, which points to the *bottom* of the current stack frame. `rbp` is also where variables are calculated from
+`rbp` is the base pointer, which points to the _bottom_ of the current stack frame. `rbp` is also where variables are calculated from
 
 ### rsp
 
-`rsp` is the stack pointer, which points to the *top* of the current stack frame. This is where `ret` gets it's address to return to, and is an important register as it controls execution
+`rsp` is the stack pointer, which points to the _top_ of the current stack frame. This is where `ret` gets it's address to return to, and is an important register as it controls execution
 
 ### rip
 
@@ -71,12 +71,13 @@ Special purpose registers are reserved registers that each perform an important 
 
 Most of the registers are broken up into segments, such as the general purpose registers. For example, the `rax` register is the full, 64-bit version of that register, while `eax` is the 32-bit version. Then there's a 16-bit version `ax`, which is then broken up into two 8-bit registers `ah` and `al`. These 8-bit registers are labelled as such, because the `h` means `higher` and `l` means `lower`, basically saying that `al` is the lower of the two bytes in `ax`. This might sound confusing, so I'll give a diagram below:
 
-![rax](images/rax.png)
+![rax](../../.gitbook/assets/rax.png)
 
 This structure is also applied to other general purpose registers such as `rbx`, `rcx` and `rdx`:
 
-![registers](images/registers.png)
+![registers](../../.gitbook/assets/registers.png)
 
 Other registers can be segmented as well, but these are the main ones you'll see.
 
-Special purpose registers are *not* segmented in this manner either, the only segments you'll see are the 64-bit and 32-bit versions
+Special purpose registers are _not_ segmented in this manner either, the only segments you'll see are the 64-bit and 32-bit versions
+
