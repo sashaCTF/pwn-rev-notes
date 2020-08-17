@@ -1,4 +1,4 @@
-# conditional vs unconditional jumps
+# Conditional vs Unconditional Jumps
 
 This section covers the use of the `jmp` instruction, plus it's variants, and the `cmp` instruction
 
