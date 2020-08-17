@@ -1,7 +1,7 @@
 # Table of contents
 
 * [pwn-rev-notes](README.md)
-* [Revere Engineering](reverse-engineering/README.md)
+* [Reverse Engineering](reverse-engineering/README.md)
   * [What is assembly language?](reverse-engineering/assembly-language/README.md)
     * [credits](reverse-engineering/assembly-language/credits.md)
     * [Dealing with data](reverse-engineering/assembly-language/dealing-with-data.md)
