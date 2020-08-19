@@ -20,6 +20,7 @@
 * [CTF Writeups](ctf-writeups/README.md)
   * [Reversing](ctf-writeups/reversing.md)
   * [Pwn](ctf-writeups/pwn/README.md)
+    * [CSI-CTF-2020](ctf-writeups/pwn/csi-ctf-2020.md)
     * [Asis-CTF-2020](ctf-writeups/pwn/asis-ctf-2020/README.md)
       * [Full Protection](ctf-writeups/pwn/asis-ctf-2020/full-protection.md)
     * [RACTF-2020](ctf-writeups/pwn/ractf-2020/README.md)
