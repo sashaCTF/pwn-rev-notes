@@ -44,7 +44,7 @@ Let's load this into ghidra to get some pseudo-c code
 
 ![main](../.gitbook/assets/globalwarmingmain.png)
 
-Here we see it take input with fgets, where it makes a secure copy to the buffer \(reads 1024 into a 1024 big buffer\), so no buffer overflow here. It then calls `login` with this input, and another value that's unkown. Let's check in gdb what this is:
+Here we see it take input with fgets, where it makes a secure copy to the buffer \(reads 1024 into a 1024 big buffer\), so no buffer overflow here. It then calls `login` with this input, and another value that's unknown. Let's check in gdb what this is:
 
 ```text
    0x804928a <main+139>:        push   eax
@@ -66,7 +66,7 @@ Seems like a `user` variable that we might need to change. Let's decompile `logi
 
 So it prints our input back to us without a format specifier, hence the format string exploit. Then it compares a variable to the value `0xb4dbabe3`, if equal, we get the flag
 
-We can just assume that the previosu value is that variable, but let's just check that with gdb:
+We can just assume that the previous value is that variable, but let's just check that with gdb:
 
 ```text
 => 0x80491c6 <login+32>:        mov    eax,DWORD PTR [ebx+0x2c]    <== moves the value into eax
