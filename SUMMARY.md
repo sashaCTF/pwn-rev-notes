@@ -18,5 +18,6 @@
 * [Binary Exploitation](binexp/README.md)
   * [Buffer Overflow](binexp/buffer-overflow.md)
 * [CTF Writeups](ctf-writeups/README.md)
+  * [Reversing](ctf-writeups/reversing.md)
   * [pwn](ctf-writeups/pwn.md)
 
