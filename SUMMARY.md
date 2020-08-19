@@ -19,5 +19,6 @@
   * [Buffer Overflow](binexp/buffer-overflow.md)
 * [CTF Writeups](ctf-writeups/README.md)
   * [Reversing](ctf-writeups/reversing.md)
-  * [Pwn](ctf-writeups/pwn.md)
+  * [Pwn](ctf-writeups/pwn/README.md)
+    * [Finches In A Stack](ctf-writeups/pwn/finches-in-a-stack.md)
 
