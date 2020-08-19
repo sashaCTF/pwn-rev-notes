@@ -62,7 +62,7 @@ arg[1]: 0xffffce90 ("aaaa\n")
 
 Seems like a `user` variable that we might need to change. Let's decompile `login`:
 
-![login](../.gitbook/assets/globalwarminglogin.png)
+![](../../../.gitbook/assets/globalwarminglogin.png)
 
 So it prints our input back to us without a format specifier, hence the format string exploit. Then it compares a variable to the value `0xb4dbabe3`, if equal, we get the flag
 
