@@ -1,6 +1,6 @@
 # Finches In A Pie
 
-This challenge is very similiar to Finches in a Stack, so this one is more like a continuation of that writeup, so I'd advise reading that one first before reading this one. Here's the link: [Finches in a Stack](finches-in-a-stack.md)
+This challenge is very similar to Finches in a Stack, so this one is more like a continuation of that writeup, so I'd advise reading that one first before reading this one. Here's the link: [Finches in a Stack](finches-in-a-stack.md)
 
 ### Protections
 
