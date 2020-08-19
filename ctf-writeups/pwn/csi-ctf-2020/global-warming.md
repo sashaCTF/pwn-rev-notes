@@ -42,7 +42,7 @@ And it's fortunately vulnerable to format strings
 
 Let's load this into ghidra to get some pseudo-c code
 
-![main](../.gitbook/assets/globalwarmingmain.png)
+![](../../../.gitbook/assets/globalwarmingmain.png)
 
 Here we see it take input with fgets, where it makes a secure copy to the buffer \(reads 1024 into a 1024 big buffer\), so no buffer overflow here. It then calls `login` with this input, and another value that's unknown. Let's check in gdb what this is:
 
