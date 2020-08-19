@@ -21,5 +21,6 @@
   * [Reversing](ctf-writeups/reversing.md)
   * [Pwn](ctf-writeups/pwn/README.md)
     * [ractf-2020](ctf-writeups/pwn/ractf-2020/README.md)
+      * [Finches In A Pie](ctf-writeups/pwn/ractf-2020/finches-in-a-pie.md)
       * [Finches In A Stack](ctf-writeups/pwn/ractf-2020/finches-in-a-stack.md)
 
