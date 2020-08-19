@@ -2,7 +2,7 @@
 
 This challenge is very similar to Finches in a Stack, so this one is more like a continuation of that writeup, so I'd advise reading that one first before reading this one. Here's the link: [Finches in a Stack](finches-in-a-stack.md)
 
-### Protections
+## Protections
 
 First, let's check the protections that this binary has using checksec:
 
@@ -27,7 +27,7 @@ And a new one:
 
 Since this binary is practically the same as `fias`, I won't go over the reversing again
 
-### Overview
+## Overview
 
 Our exploit is going to have four parts again:
 
@@ -38,7 +38,7 @@ Our exploit is going to have four parts again:
 
 We already have the other 4 sorted, however our new challenge is to find the return pointer, due to PIE randomizing it
 
-### Leaking PIE
+## Leaking PIE
 
 Fortunately, we can also leak a PIE address with format strings, this time it's `%12$p`. However, there are some calculations that need to be made to get the base address Lets load up gdb and have a look at the functions:
 
@@ -86,7 +86,7 @@ And using our offset from before
 >
 > To find the offset of the leaked PIE address. Now, using this information, we can always find the return pointer we need
 
-### Local exploit
+## Local exploit
 
 Now we can create our local exploit using python3 + pwntools. We send the two format strings in the same line, separated by a `-`, so we can leak the canary and PIE at one time:
 
@@ -119,7 +119,7 @@ print(io.recvline().decode())
 io.close()
 ```
 
-### Transferring to remote
+## Transferring to remote
 
 Transferring to remote is very simple once again:
 
