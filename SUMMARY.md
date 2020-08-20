@@ -19,6 +19,7 @@
   * [Buffer Overflow](binexp/buffer-overflow.md)
 * [CTF Writeups](ctf-writeups/README.md)
   * [Reversing](ctf-writeups/reversing/README.md)
+    * [RACTF-2020](ctf-writeups/reversing/ractf-2020.md)
     * [CSI-CTF-2020](ctf-writeups/reversing/csi-ctf-2020/README.md)
       * [Blaise](ctf-writeups/reversing/csi-ctf-2020/blaise.md)
   * [Pwn](ctf-writeups/pwn/README.md)
