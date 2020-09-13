@@ -15,7 +15,6 @@
     * [System Calls](reverse-engineering/assembly-language/system-calls.md)
   * [Why learn reverse engineering?](reverse-engineering/why-learn-it.md)
   * [What is reverse engineering?](reverse-engineering/what-is-it.md)
-* [Untitled](untitled.md)
 * [Binary Exploitation](binexp/README.md)
   * [Buffer Overflow](binexp/buffer-overflow.md)
 * [CTF Writeups](ctf-writeups/README.md)
