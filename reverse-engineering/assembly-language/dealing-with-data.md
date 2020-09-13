@@ -208,6 +208,28 @@ This is commonly used alongside push. For example, the following code would writ
 
 This combo is used a lot in calling higher level c functions, with arguments. This is covered more in another article
 
+#### popal
+
+`popal` is an instruction that is exclusively on 32-bit architectures.  It is used to pop every general purpose register, however you won't see it used very often. It doesn't take any operands, so syntax is just:
+
+```text
+popal
+```
+
+It will pop the registers in this order:
+
+```text
+EDI
+ESI
+EBP
+EBX
+EDX
+ECX
+EAX
+```
+
+And has an opcode of `\x61`
+
 ## xchg
 
 `xchg` will basically swap the contents of twp register around. Syntax is as follows:
