@@ -44,7 +44,7 @@ For example if `eax` stored `6` \(`00000110`\), and was or'ed against `1` \(`000
 or eax, 1
 ```
 
-`eax` would then hold `7` \(`00000111`\)
+`eax` would then hold `7` \(`00000111`\).
 
 ## xor
 
@@ -67,11 +67,11 @@ xor eax, 18
 
 ## test
 
-`test` is just an `and` instruction, however, unlike `and`, `test` _doesn't_ change any operands
+`test` is just an `and` instruction, however, unlike `and`, `test` _doesn't_ change any operands.
 
 ## not
 
-`not` is a simple gate, it just inverts it's operand
+`not` is a simple gate, it just inverts it's operand.
 
 | Operand | Result |
 | :--- | :--- |
@@ -84,5 +84,5 @@ For example, if `eax` contained `26` \(`00011010`\), and you did:
 not eax
 ```
 
-`eax` would then hold `229` \(`11100101`\)
+`eax` would then hold `229` \(`11100101`\).
 
