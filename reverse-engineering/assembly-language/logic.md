@@ -10,7 +10,7 @@ The syntax for the next 4 instructions is just:
 
 ## and
 
-`and` is a logic gate where both operands have to be `true` \(or `1`\) to return `true` \(or `1`\). It will do the operation, and store the result in the first operand.
+`and` is a logic gate where both operands have to be `true` \(or `1`\) to return `true` \(or `1`\). It will do the operation, and store the result in the first operand
 
 | A | B | Result |
 | :--- | :--- | :--- |
@@ -25,11 +25,11 @@ For example, if `eax` contained `17` \(`00010001`\), and you did the `and` opera
 and eax, 3
 ```
 
-`eax` would then hold `1` \(`00000001`\).
+`eax` would then hold `1` \(`00000001`\)
 
 ## or
 
-`or` is a logic gate where only one operand needs to be `true` \(or `1`\). Works in a similar way to `and`
+`or` is a logic gate where only one operand needs to be `true` \(or `1`\). Works in a similiar way to `and`
 
 | A | B | Result |
 | :--- | :--- | :--- |
@@ -44,7 +44,7 @@ For example if `eax` stored `6` \(`00000110`\), and was or'ed against `1` \(`000
 or eax, 1
 ```
 
-`eax` would then hold `7` \(`00000111`\).
+`eax` would then hold `7` \(`00000111`\)
 
 ## xor
 
@@ -67,11 +67,11 @@ xor eax, 18
 
 ## test
 
-`test` is just an `and` instruction, however, unlike `and`, `test` _doesn't_ change any operands.
+`test` is just an `and` instruction, however, unlike `and`, `test` _doesn't_ change any operands
 
 ## not
 
-`not` is a simple gate, it just inverts it's operand.
+`not` is a simple gate, it just inverts it's operand
 
 | Operand | Result |
 | :--- | :--- |
@@ -84,5 +84,5 @@ For example, if `eax` contained `26` \(`00011010`\), and you did:
 not eax
 ```
 
-`eax` would then hold `229` \(`11100101`\).
+`eax` would then hold `229` \(`11100101`\)
 

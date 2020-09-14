@@ -1,6 +1,6 @@
 # Conditional vs Unconditional Jumps
 
-This section covers the use of the `jmp` instruction, plus it's variants, and the `cmp` instruction
+This section covers the use of the `jmp` instruction, plus it's variants, and the `cmp` instruction.
 
 ## unconditional jumps
 
@@ -10,9 +10,9 @@ We'll start with unconditional jumps first, as they are the easiest. They basica
 jmp destination
 ```
 
-Destination can hold either a static address, or a register
+Destination can hold either a static address, or a register.
 
-Here's an example of it's usage
+Here's an example of it's usage:
 
 ```text
 0x100000:   jmp 0x200000
@@ -39,7 +39,7 @@ Conditional jumps are essentially how assembly implements `if` statements. There
 2: The jump
 ```
 
-The first part is often filled out with a `cmp` instruction, however it can also be a [logic operation](logic.md)
+The first part is often filled out with a `cmp` instruction, however it can also be a [logic operation](logic.md).
 
 ### cmp
 
@@ -72,7 +72,7 @@ je  = jump equal
 jne = jump not equal
 ```
 
-I won't cover them all here, if you want to see more, [here](https://www.tutorialspoint.com/assembly_programming/assembly_conditions.htm) is a good site
+I won't cover them all here, if you want to see more, [here](https://www.tutorialspoint.com/assembly_programming/assembly_conditions.htm) is a good site.
 
 Using `jne`:
 
