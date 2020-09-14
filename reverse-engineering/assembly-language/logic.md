@@ -10,7 +10,7 @@ The syntax for the next 4 instructions is just:
 
 ## and
 
-`and` is a logic gate where both operands have to be `true` \(or `1`\) to return `true` \(or `1`\). It will do the operation, and store the result in the first operand
+`and` is a logic gate where both operands have to be `true` \(or `1`\) to return `true` \(or `1`\). It will do the operation, and store the result in the first operand.
 
 | A | B | Result |
 | :--- | :--- | :--- |
@@ -25,11 +25,11 @@ For example, if `eax` contained `17` \(`00010001`\), and you did the `and` opera
 and eax, 3
 ```
 
-`eax` would then hold `1` \(`00000001`\)
+`eax` would then hold `1` \(`00000001`\).
 
 ## or
 
-`or` is a logic gate where only one operand needs to be `true` \(or `1`\). Works in a similiar way to `and`
+`or` is a logic gate where only one operand needs to be `true` \(or `1`\). Works in a similar way to `and`
 
 | A | B | Result |
 | :--- | :--- | :--- |
