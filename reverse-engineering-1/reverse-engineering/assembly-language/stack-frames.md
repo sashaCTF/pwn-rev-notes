@@ -2,7 +2,7 @@
 
 The stack is an area of memory where data is typically stored \(unless it's larger data, as that's usually stored in the heap\). It is located near the top of the stack, just below the kernel, and grows downwards. The stack is made up of _stack frames_, which are areas of the stack that different functions use. Here's a diagram of stack frame:
 
-![stack-frame](../../.gitbook/assets/stackframe.png)
+![stack-frame](../../../.gitbook/assets/stackframe.png)
 
 The `rbp` remains constant, holding the saved `rbp` that's right before the return pointer. It's constant as that's what the local variables are based on. You'll often see them represented by `rbp - [num]`, as variables are referenced by their address. Ifr the `rbp` changed, variables wouldn't be reference correctly. The `rsp` moves about quite a lot with `push`, `pop` and `leave` instructions, and doesn't need to be constant.
 
