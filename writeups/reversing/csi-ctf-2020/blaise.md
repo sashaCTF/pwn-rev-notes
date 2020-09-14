@@ -34,13 +34,13 @@ $
 
 Let's throw it into ghidra to see the pseudo-c code of the file. I've prepared the decompilation by renaming functions and variable already. Here's what our main function looks like:
 
-![](../../../../.gitbook/assets/blaisemain.png)
+![](../../../.gitbook/assets/blaisemain.png)
 
 However there isn't much useful info here, although we know that it calls the functions `display_number` and `process`
 
 Let's decompile `display_number`:
 
-![](../../../../.gitbook/assets/blaisedisplay.png)
+![](../../../.gitbook/assets/blaisedisplay.png)
 
 We see here that is basically:
 
@@ -50,7 +50,7 @@ We see here that is basically:
 
 Let's decompile `process` now:
 
-![](../../../../.gitbook/assets/blaiseprocess.png)
+![](../../../.gitbook/assets/blaiseprocess.png)
 
 This is most important function, and a lot is going on here:
 
@@ -67,13 +67,13 @@ So, in order to do this challenge, we need to write a script that constantly giv
 
 Let's decompile `c`:
 
-![](../../../../.gitbook/assets/blaisec.png)
+![](../../../.gitbook/assets/blaisec.png)
 
 So it makes 3 variables, using the `f` function, and then returns a value based on those 3.
 
 Lets' decompile `f`:
 
-![](../../../../.gitbook/assets/blaisef.png)
+![](../../../.gitbook/assets/blaisef.png)
 
 Just does some maths with the provided number.
 

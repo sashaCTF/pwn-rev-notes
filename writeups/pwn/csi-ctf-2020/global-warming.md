@@ -42,7 +42,7 @@ And it's fortunately vulnerable to format strings
 
 Let's load this into ghidra to get some pseudo-c code
 
-![](../../../../.gitbook/assets/globalwarmingmain.png)
+![](../../../.gitbook/assets/globalwarmingmain.png)
 
 Here we see it take input with fgets, where it makes a secure copy to the buffer \(reads 1024 into a 1024 big buffer\), so no buffer overflow here. It then calls `login` with this input, and another value that's unknown. Let's check in gdb what this is:
 
@@ -62,7 +62,7 @@ arg[1]: 0xffffce90 ("aaaa\n")
 
 Seems like a `user` variable that we might need to change. Let's decompile `login`:
 
-![](../../../../.gitbook/assets/globalwarminglogin.png)
+![](../../../.gitbook/assets/globalwarminglogin.png)
 
 So it prints our input back to us without a format specifier, hence the format string exploit. Then it compares a variable to the value `0xb4dbabe3`, if equal, we get the flag
 
