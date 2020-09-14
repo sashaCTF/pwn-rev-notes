@@ -21,8 +21,7 @@
 
 ## Pwn
 
-* [Binary Exploitation](pwn/binexp/README.md)
-  * [Buffer Overflow](pwn/binexp/buffer-overflow.md)
+* [Buffer Overflow](pwn/buffer-overflow.md)
 
 ## writeups
 
