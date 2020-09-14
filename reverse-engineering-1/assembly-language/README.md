@@ -1,4 +1,4 @@
-# What is assembly language?
+# Assembly Language
 
 Assembly language is the lowest level of programming language you can get. A low level programming is one whose instruction set closer resembles the language that computers understand, which can make it harder for humans to understand. This is the opposite of a high level programming language, such as python, which is easier for humans to read, but machines can't read it \(so we translate to machine code\).
 

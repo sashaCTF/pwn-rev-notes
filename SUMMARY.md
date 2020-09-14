@@ -7,7 +7,7 @@
 * [Contents](reverse-engineering-1/reverse-engineering.md)
 * [What is reverse engineering?](reverse-engineering-1/what-is-it.md)
 * [Why learn reverse engineering?](reverse-engineering-1/why-learn-it.md)
-* [What is assembly language?](reverse-engineering-1/assembly-language/README.md)
+* [Assembly Language](reverse-engineering-1/assembly-language/README.md)
   * [Dealing with data](reverse-engineering-1/assembly-language/dealing-with-data.md)
   * [Arithmetic](reverse-engineering-1/assembly-language/arithmetic.md)
   * [Logical Operations](reverse-engineering-1/assembly-language/logic.md)
