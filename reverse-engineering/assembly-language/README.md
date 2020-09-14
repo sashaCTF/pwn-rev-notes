@@ -1,6 +1,6 @@
 # What is assembly language?
 
-Assembly language is the lowest level of programming language you can get. A low level programming is one whose instruction set closer resembles the language that computers understand, which can make it harder for humans to understand. This is the opposite of a high level programmng language, such as python, which is easier for humans to read, but machines can't read it \(so we translate to machine code\).
+Assembly language is the lowest level of programming language you can get. A low level programming is one whose instruction set closer resembles the language that computers understand, which can make it harder for humans to understand. This is the opposite of a high level programming language, such as python, which is easier for humans to read, but machines can't read it \(so we translate to machine code\).
 
 Assembly code and machine code are the two lowest programming languages, and are essentially the same, except that machine code is the raw bytes, while assembly is the visual representation of those instructions.
 
@@ -8,7 +8,7 @@ Because of this, more instructions are required to do the task compared to a hig
 
 Machine/assembly code is what programs are compiled into, for example when you do `gcc file.c -o file`, gcc converts the c code into machine code, so that the computer can understand it, and be able to run it, so for reverse engineering it's important to know assembly code.
 
-Here we see the same program written in 3 different programming languages, which is a classic "Hello World!" program, to demonstrate the earlier point.
+Here we see the same program written in 3 different programming languages, which is a classic "Hello World!" program, to demonstrate the earlier point:
 
 Python \(high\)
 
