@@ -2,7 +2,7 @@
 
 Assembly language is the lowest level of programming language you can get. A low level programming is one whose instruction set closer resembles the language that computers understand, which can make it harder for humans to understand. This is the opposite of a high level programmng language, such as python, which is easier for humans to read, but machines can't read it \(so we translate to machine code\).
 
-Assembly code and machine code are the two lowest programming languages, and are essentially the same, except that machine code is the raw bytes, while assembly is the visual representation of those instructions
+Assembly code and machine code are the two lowest programming languages, and are essentially the same, except that machine code is the raw bytes, while assembly is the visual representation of those instructions.
 
 Because of this, more instructions are required to do the task compared to a higher level language.
 
