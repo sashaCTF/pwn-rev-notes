@@ -23,7 +23,7 @@
 
 * [Buffer Overflow](pwn/buffer-overflow.md)
 
-## writeups
+## Writeups
 
 * [Pwn](writeups/pwn/README.md)
   * [RACTF-2020](writeups/pwn/ractf-2020/README.md)
