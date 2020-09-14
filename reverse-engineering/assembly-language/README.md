@@ -61,11 +61,11 @@ The above is machine code represented in hex, except, machines don't interpret c
 00110001 11000000 00110001 11011011 00110001 11001001 00110001 11010010 11101011 00010001 10110000 00000100 10110011 00000001 10110010 00001011 01011001 11001101 10000000 00110001 11000000 10110000 00000001 00110000 11011011 11001101 10000000 11101000 11101010 11111111 11111111 11111111 01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100
 ```
 
-As horrible as assembly code can be, we're gonna stick to it, because machine code is just horrible to read, unless you're a computer
+As horrible as assembly code can be, we're gonna stick to it, because machine code is just horrible to read, unless you're a computer.
 
 Don't worry if the above looks daunting, assembly code still isn't a very nice language to learn, and besides, you're here to learn it, and I'll try make it as clear as I can :\)
 
-By the end of these, I'm not expecting you to be able to write fluently in assembly or machine code, that isn't quite what I'm trying to teach, however, the aim of this is so that you can **understand** it when decompiling and disassembling programs
+By the end of these, I'm not expecting you to be able to write fluently in assembly or machine code, that isn't quite what I'm trying to teach, however, the aim of this is so that you can **understand** it when decompiling and disassembling programs.
 
-Also, another note, I will be covering _intel_ assembly, not amd. This is because personally, amd's assembly is harder to read than intel's, and I will also be covering both 32-bit and 64-bit
+Also, another note, I will be covering _intel_ assembly, not amd. This is because personally, amd's assembly is harder to read than intel's, and I will also be covering both 32-bit and 64-bit.
 
