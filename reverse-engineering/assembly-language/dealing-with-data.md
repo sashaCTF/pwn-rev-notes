@@ -4,7 +4,7 @@ In this we will go over how assembly handles data, through the use of the instru
 
 ## mov and lea
 
-`mov` and `lea` are both quite similiar, however it's important to know the differences
+`mov` and `lea` are both quite similiar, however it's important to know the differences.
 
 ### mov
 
@@ -68,13 +68,13 @@ And do the same instruction, except with a `lea`:
  lea eax, 0x40000000
 ```
 
-Instead of `eax` being `0x11111111`, it'll be `0x40000000`. This is because `lea` doesn't copy what's at the address over, rather it copies the address itself
+Instead of `eax` being `0x11111111`, it'll be `0x40000000`. This is because `lea` doesn't copy what's at the address over, rather it copies the address itself.
 
-Summed up, `mov` copies the _value_ at the address, while `lea` copies the _address_ itself
+Summed up, `mov` copies the _value_ at the address, while `lea` copies the _address_ itself.
 
 ## push and pop
 
-These two instructions are usually used together, but do very oppsoite jobs. \(Note: It's important to remember here that `esp` points to the top of the stack frame\)
+These two instructions are usually used together, but do very oppsoite jobs. \(Note: It's important to remember here that `esp` points to the top of the stack frame\).
 
 ### push
 
@@ -206,7 +206,7 @@ This is commonly used alongside push. For example, the following code would writ
  pop eax
 ```
 
-This combo is used a lot in calling higher level c functions, with arguments. This is covered more in another article
+This combo is used a lot in calling higher level c functions, with arguments. This is covered more in another article.
 
 #### popal
 
@@ -238,7 +238,7 @@ And has an opcode of `\x61`
  xchg register1, register2
 ```
 
-For example, if `eax` contained `3`, and `ebx` contained `5`, you could use `xchg` to swap \(or _exchange_\) them
+For example, if `eax` contained `3`, and `ebx` contained `5`, you could use `xchg` to swap \(or _exchange_\) them.
 
 ```text
  xchg eax, ebx
