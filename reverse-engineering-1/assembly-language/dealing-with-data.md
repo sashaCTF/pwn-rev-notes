@@ -2,7 +2,7 @@
 
 In this we will go over how assembly handles data, through the use of the instructions: `mov`, `lea`, `push`, `pop`, `xchg`
 
-## mov and lea aaaa
+## mov and lea
 
 `mov` and `lea` are both quite similiar, however it's important to know the differences.
 
