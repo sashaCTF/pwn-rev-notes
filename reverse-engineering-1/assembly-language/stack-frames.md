@@ -31,8 +31,6 @@ The return pointer comes after the saved `rbp`, and dictates where the program s
 
 ```text
 jmp func
-push [rip + 5]
+push rip
 ```
-
-\(it's 5 because that's usually how many bytes a `call` instruction is\)
 
