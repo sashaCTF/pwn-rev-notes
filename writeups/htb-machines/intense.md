@@ -40,7 +40,7 @@ We get 2 ports, `ssh` and `http`, so it's a fairly simple box in regards to port
 
 This is what we see when we first go to the site:
 
-![site](images/site.png)
+![](../../.gitbook/assets/intense_site.png)
 
 And there's a few things to note:
 
@@ -49,7 +49,7 @@ And there's a few things to note:
 
 Let's first login with guest. We see a few options and some text, not much else:
 
-![guest\_options](images/guest_options.png)
+![](../../.gitbook/assets/intense_guest_options.png)
 
 ```text
 Welcome guest
@@ -60,7 +60,7 @@ One day, an old man said "there is no point using automated tools, better to cra
 
 Let's have a look at `submit`:
 
-![submit](images/submit.png)
+![](../../.gitbook/assets/intense_submit.png)
 
 Quite simple, just seems to send a message we type. Let's now look at the source code, and see what we can find.
 
@@ -343,7 +343,7 @@ auth=dXNlcm5hbWU9Z3Vlc3Q7c2VjcmV0PTg0OTgzYzYwZjdkYWFkYzFjYjg2OTg2MjFmODAyYzBkOWY
 
 We get our admin cookie! Let's check this works:
 
-![welcome\_admin](images/welcome_admin.png)
+![](../../.gitbook/assets/intense_welcome_admin.png)
 
 Bingo!
 
