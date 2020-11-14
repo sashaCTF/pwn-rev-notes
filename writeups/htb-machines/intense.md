@@ -1,5 +1,7 @@
 # Intense
 
+### Introduction
+
 Intense was a hard Linux box, and probably my favourite box that I've done. A brief overview is:
 
 * Use [error-based sql injection](intense.md#sql-injection-1) to brute force the admin user's password hash
