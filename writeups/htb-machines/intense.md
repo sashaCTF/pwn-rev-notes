@@ -4,7 +4,7 @@
 
 Intense was a hard Linux box, and probably my favourite box that I've done. A brief overview is:
 
-* Use [error-based sql injection](intense.md#SQLi-1) to brute force the admin user's password hash
+* Use [error-based sql injection](intense.md#sql-injection-1) to brute force the admin user's password hash
 * Using the admin hash, we [forge a cookie](intense.md#hash-length-extension-1) using a hash length extension vulnerability
 * From admin, we can use [directory traversal](intense.md#admin) to read files and directories, taking advantage of custom functions, and get the user flag
 * We then [exploit snmp](intense.md#snmp) on the box with the help of admin to get a shell
