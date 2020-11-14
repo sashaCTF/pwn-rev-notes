@@ -19,11 +19,6 @@
   * [The Stack Frame](reverse-engineering-1/assembly-language/stack-frames.md)
   * [System Calls](reverse-engineering-1/assembly-language/system-calls.md)
 
-## Binary Exploitation <a id="pwn"></a>
-
-* [Introduction](pwn/introduction.md)
-* [Buffer Overflow](pwn/buffer-overflow.md)
-
 ## Writeups
 
 * [Pwn](writeups/pwn/README.md)
