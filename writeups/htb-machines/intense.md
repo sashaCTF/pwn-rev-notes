@@ -576,7 +576,7 @@ download /lib/x86_64-linux-gnu/libc-2.27.so    <-- libc
 download /lib/x86_64-linux-gnu/ld-2.27.so    <-- interpreter
 ```
 
-**Port forwarding**
+**Network Tunnelling**
 
 Since the binary we have to exploit listens on a server \(port 5001\), it'll be best for us to port forward so that we can access the service from our local machine. To do this I'm going to use `chisel`, because metasploit port forwarding wasn't working for me. Using our meterpreter we can upload `chisel`, and then run it.
 
