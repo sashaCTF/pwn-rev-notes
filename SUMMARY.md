@@ -41,4 +41,6 @@
     * [Solved In A Flash](writeups/reversing/ractf-2020/solved-in-a-flash.md)
   * [CSI-CTF-2020](writeups/reversing/csi-ctf-2020/README.md)
     * [Blaise](writeups/reversing/csi-ctf-2020/blaise.md)
+* [HTB Machines](writeups/htb-machines/README.md)
+  * [Intense](writeups/htb-machines/intense.md)
 
