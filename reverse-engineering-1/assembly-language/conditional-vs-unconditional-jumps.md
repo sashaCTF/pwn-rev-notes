@@ -7,7 +7,7 @@ This section covers the use of the `jmp` instruction, plus it's variants, and th
 We'll start with unconditional jumps first, as they are the easiest. They basically redirect execution by jumping to a different place in the code. This is done with the `jmp` instruction, whose syntax is as follows:
 
 ```text
-jmp destination
+jmp dest
 ```
 
 Destination can hold either a static address, or a register.
