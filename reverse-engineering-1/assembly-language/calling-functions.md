@@ -31,7 +31,7 @@ Often, functions are called with arguments passed in, such as C functions like `
 
 ### 32-bit vs 64-bit
 
-Calling functions with arguments is different in 32-bit and 64-bit, and I'll go over how both work, as it is important to know the difference, especially when writing ROP exploits:
+Calling functions with arguments is different in 32-bit and 64-bit, and I'll go over how both work, as it is important to know the difference, especially when writing ROP chains in binary exploitation:
 
 #### 32-bit
 
