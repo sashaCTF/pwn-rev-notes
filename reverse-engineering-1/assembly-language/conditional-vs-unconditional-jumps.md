@@ -46,7 +46,7 @@ The first part is often filled out with a `cmp` instruction, however it can also
 The `cmp` instruction essentially takes two operands, and subtracts one from the other, but _doesn't_ change the values of them. Syntax is as follows:
 
 ```text
-cmp destination, source
+cmp dest, src
 ```
 
 For example, if we wanted to compare the value of `eax` to `10`, we would do:
