@@ -30,51 +30,54 @@ And here's an example with addresses: Lets say that our memory looks like this:
 
 ```text
  ...
- 0x40000000 | 0x11111111
- 0x40000004 | 0x22222222
- 0x40000008 | 0x33333333
+ 0x4000 | 0x1111
+ 0x4004 | 0x2222
+ 0x4008 | 0x3333
  ...
 ```
 
-And we wanted to move the value at `0x40000000` to `eax`, we would do:
+And we wanted to move the value at `0x4000` to `eax`, we would do:
 
 ```text
- mov eax, 0x40000000
+ mov eax, dword ptr [0x4000]
 ```
 
-After the `mov`, our `eax` register would contain the value `0x11111111`
+After the `mov`, our `eax` register would contain the value `0x1111`
 
 ### lea
 
-`lea` is similiar to `mov`, except it loads addresses. Syntax is as follows:
+`lea` is similar to `mov`, except it can be much more powerful. Syntax is as follows:
 
 ```text
- lea destination, source
+ lea dest, [src]
 ```
 
-Let's take our previous memory example:
+`lea` is a useful instruction because it can help to reduce the lines of assembly by doing arithmetic in the `src` parameter before copying the value to `dest` 
+
+For example:
 
 ```text
- ...
- 0x40000000 | 0x11111111
- 0x40000004 | 0x22222222
- 0x40000008 | 0x33333333
- ...
+add eax, 5
+mov ebx, eax
 ```
 
-And do the same instruction, except with a `lea`:
+Can be translated to:
 
 ```text
- lea eax, 0x40000000
+lea ebx, [eax+5]
 ```
 
-Instead of `eax` being `0x11111111`, it'll be `0x40000000`. This is because `lea` doesn't copy what's at the address over, rather it copies the address itself.
+This can be extended to:
 
-Summed up, `mov` copies the _value_ at the address, while `lea` copies the _address_ itself.
+```text
+lea ecx, [ebx*5 + ebx - 3]
+```
 
-## push and pop
+Due to it's versatility, it can be a very useful instruction
 
-These two instructions are usually used together, but do very oppsoite jobs. \(Note: It's important to remember here that `esp` points to the top of the stack frame\).
+### push and pop
+
+These two instructions are usually used together, but do very opposite jobs. \(Note: It's important to remember here that `esp` points to the top of the stack frame\).
 
 ### push
 
