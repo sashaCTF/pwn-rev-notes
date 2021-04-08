@@ -61,7 +61,7 @@ Special purpose registers are reserved registers that each perform an important 
 
 ### rsp
 
-`rsp` is the stack pointer, which points to the _top_ of the current stack frame. This is where `ret` gets it's address to return to, and is an important register as it controls execution
+`rsp` is the stack pointer, which points to the _top_ of the current stack frame. This is often used to write new values to the stack \(`push`\), or read them \(`pop`\). It's also decremented to form new stack frames when new functions are called
 
 ### rip
 
