@@ -87,24 +87,28 @@ Same concept as `add`, except with subtraction.
 Syntax is as follows:
 
 ```text
-mul multiplier
+mul reg
 ```
 
 For example:
 
 ```text
-eax: 5
-edx: 0
+eax = 5
+ebx = 4
+edx = 0
 ```
 
 ```text
-mul 4
+mul ebx
 ```
 
 ```text
-eax: 20
-edx: 0
+eax = 20
+ebx = 4
+edx = 0
 ```
+
+\(`eax` and `edx` would both be overwritten, even if one/both resulted in being `0x0`\)
 
 ## div
 
