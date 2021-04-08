@@ -19,13 +19,20 @@ The syntax for the next 4 instructions is just:
 | 0 | 1 | 0 |
 | 1 | 1 | 1 |
 
-For example, if `eax` contained `17` \(`00010001`\), and you did the `and` operation with `3` \(`00000011`\):
+For example, if `eax` contained `17`, and you did the `and` operation with `3`:
 
 ```text
 and eax, 3
 ```
 
-`eax` would then hold `1` \(`00000001`\).
+```text
+00010001  =  17
+00000011  =  3
+---------------
+00000001  =  1
+```
+
+`eax` would then hold `1`
 
 ## or
 
