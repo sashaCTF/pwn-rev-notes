@@ -9,13 +9,13 @@ In this we will go over arithmetic in assembly language, which will cover the in
 The syntax is as follows:
 
 ```text
-add destination, source
+add dest, src
 ```
 
-Here, source is added to destination, then is stored in destination. For example:
+Here, `src` added to `dest`, then is stored in `dest`. For example:
 
 ```text
-eax: 10
+eax = 10
 ```
 
 ```text
@@ -25,8 +25,8 @@ add eax, 5
 Then `eax` will be `15` This instruction can be used to add registers together, for example:
 
 ```text
-eax: 5
-eax: 10
+eax = 5
+ebx = 10
 ```
 
 ```text
@@ -45,7 +45,7 @@ You can also add to memory addresses, for example:
 ```
 
 ```text
-add BYTE PTR 0x40000000, 6
+add BYTE PTR [0x40000000], 6
 ```
 
 This uses a format specifier to point to the byte at memory address `0x40000000`. You can read more about format specifiers [here](format-specifiers.md).
