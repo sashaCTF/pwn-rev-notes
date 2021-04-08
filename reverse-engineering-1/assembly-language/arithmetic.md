@@ -143,7 +143,7 @@ edx = 1    <== remainder
 Syntax is as follows:
 
 ```text
-inc/dec destination
+inc/dec dest
 ```
 
 For example:
