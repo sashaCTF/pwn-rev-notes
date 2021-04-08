@@ -154,7 +154,7 @@ It's going down as that's the direction the stack grows
 `pop` is used to read values from the top of the stack frame, and put them into a register. Syntax is as follows:
 
 ```text
- pop register
+ pop reg
 ```
 
 For example, if you wanted to read the value at the top of the stack frame, and put it into the `eax` register:
@@ -163,7 +163,7 @@ For example, if you wanted to read the value at the top of the stack frame, and 
  pop eax
 ```
 
-`pop` doesn't remove the values from the stack frame, however it does copy them. Another important note, similar to push, is that when a `pop` instruction is executed, it will read the value that `esp` points to, then will increment `esp` by 4/8 \(32bit/64bit\).
+`pop` doesn't remove the values from the stack frame; it copies them. Another important note, similar to push, is that when a `pop` instruction is executed, it will read the value that `esp` points to, then will increment `esp` by 4/8 \(32bit/64bit\).
 
 So, `pop` basically acts as:
 
