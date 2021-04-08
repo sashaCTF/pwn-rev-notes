@@ -41,17 +41,17 @@ ebx: 15
 You can also add to memory addresses, for example:
 
 ```text
-0x40000000 | 0x00000003
+0x4000 | 0x00000003
 ```
 
 ```text
-add BYTE PTR [0x40000000], 6
+add BYTE PTR [0x4000], 6
 ```
 
 This uses a format specifier to point to the byte at memory address `0x40000000`. You can read more about format specifiers [here](format-specifiers.md).
 
 ```text
-0x40000000 | 0x00000009
+0x4000 | 0x00000009
 ```
 
 ## sub
@@ -61,13 +61,13 @@ This uses a format specifier to point to the byte at memory address `0x40000000`
 Syntax is as follows:
 
 ```text
-sub destination, source
+sub dest, src
 ```
 
-Here, source is subtracted from destination, and stored in destination. For example:
+Here, `src` is subtracted from `dest`, and stored in destination. For example:
 
 ```text
-eax: 5
+eax = 5
 ```
 
 ```text
@@ -75,10 +75,10 @@ sub eax, 3
 ```
 
 ```text
-eax: 2
+eax = 2
 ```
 
-Same concept to `add`, except with subtraction.
+Same concept as `add`, except with subtraction.
 
 ## mul
 
@@ -108,7 +108,7 @@ edx: 20
 
 ## div
 
-`div` is used to divide numbers. Similiar concept to `mul`, where the `eax` register is always divided by the provided operand. The quotient is then stored in the `eax` register, while the remainder is stored in the `edx` register.
+`div` is used to divide numbers. Similar concept to `mul`, where the `eax` register is always divided by the provided operand. The quotient is then stored in the `eax` register, while the remainder is stored in the `edx` register.
 
 Syntax is as follows:
 
