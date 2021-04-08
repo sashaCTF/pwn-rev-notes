@@ -32,8 +32,12 @@ And we executed the previous instruction, `ebx` would then contain `0x11112222`
 However, if we executed the following instruction:
 
 ```text
-mov 
+mov bx, WORD [0x1000]
 ```
 
+The result in `bx` would be `0x2222` , as it would only move 2 bytes. We have to use `bx` because the sizes of the operands have to match, and `bx` is the lower 16-bits of `ebx`. For example, the following instruction would be invalid.
 
+```text
+mov ebx, BYTE [0x1000]
+```
 
