@@ -5,7 +5,7 @@ Assembly uses logic gates as instructions, and we'll go over how it uses them wi
 The syntax for the next 4 instructions is just:
 
 ```text
-[operation] destination, source
+[operation] dest, src
 ```
 
 ## and
