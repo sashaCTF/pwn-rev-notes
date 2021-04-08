@@ -105,7 +105,7 @@ So, push basically acts as:
 
 ```text
  sub esp, 4/8
- mov DWORD/QWORD PTR [esp], reg
+ mov DWORD/QWORD PTR [esp], value
 ```
 
 For example, take our memory diagram below:
@@ -129,10 +129,10 @@ Firstly, `esp` decrements by 4 bytes, so it points to the next available place \
 
 ```text
  ...
- 0xffff000c | 0x11111111
- 0xffff0008 | 0x22222222
- 0xffff0004 | 0x00000000    <=== esp points here
- 0xffff0000 | 0x00000000
+ 0xffff000c | 0x1111
+ 0xffff0008 | 0x2222
+ 0xffff0004 | 0x0000    <=== esp points here
+ 0xffff0000 | 0x0000
  ...
 ```
 
@@ -140,10 +140,10 @@ Then we copy the value to where `esp` now points to:
 
 ```text
  ...
- 0xffff000c | 0x11111111
- 0xffff0008 | 0x22222222
- 0xffff0004 | 0x33333333    <=== esp points here
- 0xffff0000 | 0x00000000
+ 0xffff000c | 0x1111
+ 0xffff0008 | 0x2222
+ 0xffff0004 | 0x3333    <=== esp points here
+ 0xffff0000 | 0x0000
  ...
 ```
 
