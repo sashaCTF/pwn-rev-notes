@@ -149,7 +149,7 @@ inc/dec dest
 For example:
 
 ```text
-eax: 2
+eax = 2
 ```
 
 ```text
@@ -157,7 +157,7 @@ inc eax
 ```
 
 ```text
-eax: 3
+eax = 3
 ```
 
 Same for `dec`
