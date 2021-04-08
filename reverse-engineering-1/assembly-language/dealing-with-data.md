@@ -99,7 +99,7 @@ Or the contents of the register `eax`:
  push eax
 ```
 
-If you're using `push` to write the value of a register to the top, it maintains the value in the register, as it is copying. Another important note, when a `push` is executed, it first _decrements_ `esp` by 4/8 bytes \(32bit/64bit\), as the stack grows downwards, then the value is copied to the stack frame, where `esp` points to.
+If you're using `push` to write the value of a register to the top, it keeps the value in the register, as it is only copying. Another important note, when a `push` is executed, it first _decrements_ `esp` by 4/8 bytes \(32bit/64bit\), as the stack grows downwards, then the value is copied to the stack frame, where `esp` points to.
 
 So, push basically acts as:
 
