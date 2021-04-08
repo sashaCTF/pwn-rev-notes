@@ -163,7 +163,7 @@ For example, if you wanted to read the value at the top of the stack frame, and 
  pop eax
 ```
 
-`pop` doesn't remove the values from the stack frame; it copies them. Another important note, similar to push, is that when a `pop` instruction is executed, it will read the value that `esp` points to, then will increment `esp` by 4/8 \(32bit/64bit\).
+`pop` doesn't remove the values from the stack frame; it copies them. Another important note, similar to push, is that when a `pop` instruction is executed, it will read the value that `esp` points to, then will _increment_ `esp` by 4/8 \(32bit/64bit\).
 
 So, `pop` basically acts as:
 
