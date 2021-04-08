@@ -250,7 +250,7 @@ For example, if `eax` contained `3`, and `ebx` contained `5`, you could use `xch
 Then the registers would look like this:
 
 ```text
- eax: 5
- ebx: 3
+ eax = 5
+ ebx = 3
 ```
 
