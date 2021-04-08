@@ -19,7 +19,7 @@ When this function is called, it is assigned a stack frame, where it will have 7
 
 ## Base Pointer
 
-Right after the variables \(and canary if there is one\), is the _saved_ base pointer. This is essentially the `rbp` value in the _previous_ stack frame, and it's saved to the new stack frame so that when you return back, the program resets `rbp` back to its previous value. This is also why, at the start of functions, you'll usually see:
+Right after the variables \(and canary if there is one\), is the _saved_ base pointer. This is essentially the `rbp` value of the _previous_ stack frame, and it's saved to the new stack frame so that when you return back, the program resets `rbp` back to its previous value. This is also why, at the start of functions, you'll usually see:
 
 ```text
 push rbp
