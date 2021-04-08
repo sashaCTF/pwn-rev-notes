@@ -30,9 +30,9 @@ And here's an example with addresses: Lets say that our memory looks like this:
 
 ```text
  ...
- 0x4000 | 0x1111
- 0x4004 | 0x2222
- 0x4008 | 0x3333
+ 0x4000 | 0x11111111
+ 0x4004 | 0x22222222
+ 0x4008 | 0x33333333
  ...
 ```
 
@@ -42,7 +42,7 @@ And we wanted to move the value at `0x4000` to `eax`, we would do:
  mov eax, DWORD PTR [0x4000]
 ```
 
-After the `mov`, our `eax` register would contain the value `0x1111`
+After the `mov`, our `eax` register would contain the value `0x11111111`
 
 ### lea
 
@@ -122,17 +122,17 @@ For example, take our memory diagram below:
 Then we execute:
 
 ```text
- push 0x3333
+ push 0x33333333
 ```
 
 Firstly, `esp` decrements by 4 bytes, so it points to the next available place \(`0xffff0004`\):
 
 ```text
  ...
- 0xffff000c | 0x1111
- 0xffff0008 | 0x2222
- 0xffff0004 | 0x0000    <=== esp points here
- 0xffff0000 | 0x0000
+ 0xffff000c | 0x11111111
+ 0xffff0008 | 0x22222222
+ 0xffff0004 | 0x00000000    <=== esp points here
+ 0xffff0000 | 0x00000000
  ...
 ```
 
@@ -140,10 +140,10 @@ Then we copy the value to where `esp` now points to:
 
 ```text
  ...
- 0xffff000c | 0x1111
- 0xffff0008 | 0x2222
- 0xffff0004 | 0x3333    <=== esp points here
- 0xffff0000 | 0x0000
+ 0xffff000c | 0x11111111
+ 0xffff0008 | 0x22222222
+ 0xffff0004 | 0x33333333    <=== esp points here
+ 0xffff0000 | 0x00000000
  ...
 ```
 
