@@ -122,7 +122,7 @@ For example, take our memory diagram below:
 Then we execute:
 
 ```text
- push 0x33333333
+ push 0x3333
 ```
 
 Firstly, `esp` decrements by 4 bytes, so it points to the next available place \(`0xffff0004`\):
