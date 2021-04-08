@@ -4,7 +4,7 @@ The stack is an area of memory where data is typically stored \(unless it's larg
 
 ![stack-frame](../../.gitbook/assets/stackframe.png)
 
-The `rbp` remains constant, holding the saved `rbp` that's right before the return pointer. It's constant as that's what the local variables are based on. You'll often see them represented by `rbp - [num]`, as variables are referenced by their address. Ifr the `rbp` changed, variables wouldn't be reference correctly. The `rsp` moves about quite a lot with `push`, `pop` and `leave` instructions, and doesn't need to be constant.
+The `rbp` remains constant, holding the saved `rbp` that's right before the return pointer. It's constant as that's what the local variables are based on. You'll often see them represented by `rbp - [num]`, as variables are referenced by their address. If the `rbp` changed, variables wouldn't be reference correctly. The `rsp` moves about quite a lot with `push`, `pop` and `leave` instructions, and doesn't need to be constant.
 
 When a function is called, it is assigned it's own stack frame, and the size of it depends on the size of what it stores. For example:
 
