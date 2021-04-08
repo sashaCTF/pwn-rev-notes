@@ -9,7 +9,7 @@ In this we will go over arithmetic in assembly language, which will cover the in
 The syntax is as follows:
 
 ```text
-add dest, src
+add destination, source
 ```
 
 Here, source is added to destination, then is stored in destination. For example:

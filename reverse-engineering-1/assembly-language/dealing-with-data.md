@@ -4,7 +4,7 @@ In this we will go over how assembly handles data, through the use of the instru
 
 ## mov and lea
 
-`mov` and `lea` are both quite similiar, however it's important to know the differences.
+`mov` and `lea` are both quite similar, however it's important to know the differences.
 
 ### mov
 
@@ -14,7 +14,7 @@ In this we will go over how assembly handles data, through the use of the instru
 mov dest, src
 ```
 
-For example, if I wanted to copy the value 5 to the eax register:
+For example, if I wanted to copy the value 5 to the `eax` register:
 
 ```text
  mov eax, 5
@@ -39,7 +39,7 @@ And here's an example with addresses: Lets say that our memory looks like this:
 And we wanted to move the value at `0x4000` to `eax`, we would do:
 
 ```text
- mov eax, dword ptr [0x4000]
+ mov eax, DWORD PTR [0x4000]
 ```
 
 After the `mov`, our `eax` register would contain the value `0x1111`
@@ -105,7 +105,7 @@ So, push basically acts as:
 
 ```text
  sub esp, 4/8
- mov DWORD/QWORD PTR esp, register
+ mov DWORD/QWORD PTR [esp], reg
 ```
 
 For example, take our memory diagram below:
