@@ -4,8 +4,8 @@ Welcome to my notes on reverse engineering. This will contain my knowledge on re
 
 ## Contents
 
-* [What's reverse engineering?](what-is-it.md)
-* [Why is it good to learn reverse engineering?](why-learn-it.md)
+* [What's reverse engineering?]()
+* [Why is it good to learn reverse engineering?]()
 * [Assembly Language](assembly-language/)
 * Tools
 * Tutorials + Examples
