@@ -102,8 +102,8 @@ mul 4
 ```
 
 ```text
-eax: 5
-edx: 20
+eax: 20
+edx: 0
 ```
 
 ## div
