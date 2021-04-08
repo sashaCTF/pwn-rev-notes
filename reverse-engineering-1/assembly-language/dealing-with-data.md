@@ -30,47 +30,47 @@ And here's an example with addresses: Lets say that our memory looks like this:
 
 ```text
  ...
- 0x4000 | 0x1111
- 0x4004 | 0x2222
- 0x4008 | 0x3333
+ 0x40000000 | 0x11111111
+ 0x40000004 | 0x22222222
+ 0x40000008 | 0x33333333
  ...
 ```
 
-And we wanted to move the value at `0x4000` to `eax`, we would do:
+And we wanted to move the value at `0x40000000` to `eax`, we would do:
 
 ```text
- mov eax, dword ptr [0x4000]
+ mov eax, 0x40000000
 ```
 
 After the `mov`, our `eax` register would contain the value `0x11111111`
 
 ### lea
 
-`lea` is similiar to `mov`, except it can be more powerful. Syntax is as follows:
+`lea` is similiar to `mov`, except it loads addresses. Syntax is as follows:
 
 ```text
- lea dest, [src]
+ lea destination, source
 ```
 
-`lea` can perform arithmetic in `src` before copying the result to `dest`, which can be useful in cutting down lines of assembly. For example:
+Let's take our previous memory example:
 
-```asm
-add eax, 5
-mov ebx, eax
+```text
+ ...
+ 0x40000000 | 0x11111111
+ 0x40000004 | 0x22222222
+ 0x40000008 | 0x33333333
+ ...
 ```
 
-Can be easily replaced by:
+And do the same instruction, except with a `lea`:
 
-```asm
-lea ebx, [eax+5]
+```text
+ lea eax, 0x40000000
 ```
 
-This can also be extended to:
+Instead of `eax` being `0x11111111`, it'll be `0x40000000`. This is because `lea` doesn't copy what's at the address over, rather it copies the address itself.
 
-```asm
-lea ecx, [eax*5+ebx-3]
-```
-
+Summed up, `mov` copies the _value_ at the address, while `lea` copies the _address_ itself.
 
 ## push and pop
 
