@@ -27,5 +27,5 @@ mov esp, ebp
 pop ebp
 ```
 
-This is often used to get `esp` pointing to the required return address
+This is often used to get `esp` pointing to the required return address, and restore the base pointer of the previous stack frame
 
