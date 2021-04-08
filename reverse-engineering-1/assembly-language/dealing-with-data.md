@@ -235,7 +235,7 @@ And has an opcode of `\x61`
 
 ## xchg
 
-`xchg` will basically swap the contents of twp register around. Syntax is as follows:
+`xchg` will basically swap the contents of two register around. Syntax is as follows:
 
 ```text
  xchg register1, register2
