@@ -40,7 +40,7 @@ For example, say that we wanted to print the string `Hello World` with the C fun
 Here, we store the address of the string `Hello World` in `eax`:
 
 ```text
-eax: 0x11111111   ===> 'Hello World'
+eax: 0x11111111   ===>  'Hello World'
 ```
 
 And, right before we call `puts`, we push `eax` onto the stack like so:
