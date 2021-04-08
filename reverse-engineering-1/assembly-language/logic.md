@@ -45,13 +45,20 @@ and eax, 3
 | 0 | 1 | 1 |
 | 1 | 1 | 1 |
 
-For example if `eax` stored `6` \(`00000110`\), and was or'ed against `1` \(`00000001`\):
+For example if `eax` stored `6`, and was or'ed against `1`:
 
 ```text
 or eax, 1
 ```
 
-`eax` would then hold `7` \(`00000111`\).
+```text
+00000110  =  6
+00000001  =  1
+--------------
+00000111  =  7
+```
+
+`eax` would then hold `7`.
 
 ## xor
 
@@ -64,13 +71,20 @@ or eax, 1
 | 0 | 1 | 1 |
 | 1 | 1 | 0 |
 
-For example, if `eax` held `7` \(`00000111`\) and you xor'ed it against `18` \(`00010010`\):
+For example, if `eax` held `7` and you xor'ed it against `18`:
 
 ```text
 xor eax, 18
 ```
 
-`eax` would then hold `21` \(`00010101`\)
+```text
+00000111  =  7
+00010010  =  18
+---------------
+00010101  =  21
+```
+
+`eax` would then hold `21`
 
 ## test
 
@@ -85,10 +99,16 @@ xor eax, 18
 | 1 | 0 |
 | 0 | 1 |
 
-For example, if `eax` contained `26` \(`00011010`\), and you did:
+For example, if `eax` contained `26`, and you did:
 
 ```text
 not eax
+```
+
+```text
+00011010  =  26
+--------
+11100101  =  229
 ```
 
 `eax` would then hold `229` \(`11100101`\).
