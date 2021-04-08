@@ -55,7 +55,7 @@ Assembly code is what represents machine code, as I mentioned earlier. The follo
 \x31\xc0\x31\xdb\x31\xc9\x31\xd2\xeb\x11\xb0\x04\xb3\x01\xb2\x0b\x59\xcd\x80\x31\xc0\xb0\x01\x30\xdb\xcd\x80\xe8\xea\xff\xff\xff\x48\x65\x6c\x6c\x6f\x20\x57\x6f\x72\x6c\x64
 ```
 
-The above is machine code represented in hex, except, machines don't interpret code as hex, they interpret it as binary. The following is in binary, and is how a computer would interpet it:
+The above is machine code represented in hex, except, machines don't interpret code as hex, they interpret it as binary. The following is in binary, and is how a computer would interpret it:
 
 ```text
 00110001 11000000 00110001 11011011 00110001 11001001 00110001 11010010 11101011 00010001 10110000 00000100 10110011 00000001 10110010 00001011 01011001 11001101 10000000 00110001 11000000 10110000 00000001 00110000 11011011 11001101 10000000 11101000 11101010 11111111 11111111 11111111 01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100
