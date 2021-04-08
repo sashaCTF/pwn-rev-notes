@@ -4,7 +4,7 @@ A system call is where the code makes a call to the kernel to execute certain 'f
 
 ```text
 syscall
-int [0x80/80h]
+int 0x80
 sysenter
 ```
 
