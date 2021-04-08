@@ -117,14 +117,14 @@ edx = 0
 Syntax is as follows:
 
 ```text
-div divisor
+div reg
 ```
 
 For example:
 
 ```text
-eax: 10
-edx: 0
+eax = 10
+edx = 0
 ```
 
 ```text
@@ -132,8 +132,8 @@ div 3
 ```
 
 ```text
-eax: 3    <== quotient
-edx: 1    <== remainder
+eax = 3    <== quotient
+edx = 1    <== remainder
 ```
 
 ## inc and dec
